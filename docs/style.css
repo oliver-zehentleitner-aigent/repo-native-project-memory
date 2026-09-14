@@ -3,7 +3,7 @@
 :root {
   --paper: #f6f2ea; --paper-2: #efe9dd; --ink: #1c1a17; --ink-2: #4a463f; --ink-3: #7d786f; --rule: #d9d2c4;
   --accent: #c8641a; --accent-ink: #8f4410; --accent-soft: #f6e3d2; --green: #3f7a4a; --green-soft: #e1eddf;
-  --pill-accent-bg: #8f4410; --pill-green-bg: #3f7a4a; --pill-fg: #ffffff;
+  --pill-accent-bg: #8f4410; --pill-green-bg: #3f7a4a; --pill-neutral-bg: #5a554c; --pill-fg: #ffffff;
   --mono: ui-monospace, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
   --serif: Charter, "Iowan Old Style", Georgia, "Times New Roman", serif;
   --sans: -apple-system, "Segoe UI", Inter, Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -12,7 +12,7 @@
 @media (prefers-color-scheme: dark) {
   :root { --paper: #15140f; --paper-2: #1d1b15; --ink: #ede8de; --ink-2: #bdb6a8; --ink-3: #857e70; --rule: #2e2b23;
           --accent: #e8944a; --accent-ink: #f0b07a; --accent-soft: #33261a; --green: #8cc496; --green-soft: #1f2d21;
-          --pill-accent-bg: #e8944a; --pill-green-bg: #8cc496; --pill-fg: #15140f; }
+          --pill-accent-bg: #e8944a; --pill-green-bg: #8cc496; --pill-neutral-bg: #6b655a; --pill-fg: #15140f; }
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
@@ -92,7 +92,7 @@ section:first-of-type { border-top: 0; }
 .parts article.req { border-color: var(--green); background: var(--green-soft); }
 .parts .pill { align-self: flex-start; font-family: var(--sans); font-size: .7rem; font-weight: 600; text-transform: uppercase; letter-spacing: .1em; padding: .2rem .6rem; border-radius: 999px; background: var(--pill-green-bg); color: var(--pill-fg); margin-bottom: .8rem; }
 .parts article:not(.req) .pill { background: var(--pill-accent-bg); }
-.parts .pill.opt { background: var(--paper); color: var(--ink-2); border: 1px solid var(--ink-3); }
+.parts .pill.opt { background: var(--pill-neutral-bg); color: #ffffff; font-weight: 700; }
 .parts .role { font-family: var(--sans); font-size: .8rem; color: var(--ink-3); margin: -.2rem 0 .7rem; }
 .parts article p:last-child { margin: 0; color: var(--ink-2); }
 .closing { color: var(--ink-2); }
