@@ -87,6 +87,10 @@ That is it. Task fulfilled, no further complexity. Anything beyond it, project m
 
 This README is the canonical text. The same thesis, laid out, is at https://oliver-zehentleitner.github.io/repo-native-project-memory/ — two plain files in `docs/`, no build, no dependencies, no external requests.
 
+## Discussion
+
+Disagree, or see a layer this page misses? The place for that is the repository's [Discussions](https://github.com/oliver-zehentleitner/repo-native-project-memory/discussions) — arguments about the thesis, experiences from your own repositories, other conventions for the why layer. Corrections to the text are pull requests.
+
 ## Who
 
 Oliver Zehentleitner — [GitHub](https://github.com/oliver-zehentleitner) · [blog](https://blog.technopathy.club). This page is the thesis; [Keep the Why](https://keepthewhy.com) is one practice for its why layer, and this repository keeps its own `context/` in that format, because the argument should hold for the page that makes it.
