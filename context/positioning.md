@@ -59,3 +59,17 @@ The page says the repository is the project memory and that Keep the Why is the 
 **Rejected alternative:** MkDocs Material with a custom theme. Rejected — the theme would have to be maintained against a generator that has announced a breaking rewrite, for a page that needs neither search nor navigation.
 
 **Consequence:** the thesis exists twice, in `README.md` (canonical, what GitHub shows) and in `docs/index.html` (the same sentences, laid out). A change to the argument is made in both; the page is small enough that this costs less than a build pipeline would.
+
+## Claims are written to be hard to attack, not to be loud
+
+**Type:** decision
+**Status:** active
+**Evidence:** confirmed
+**Source:** maintainer review of the first published version, 2026-09-14
+**Revisit when:** a sentence on the page is challenged on facts, or a claim is added that the page cannot back
+
+The page avoids absolutes where they are technically assailable: not "one clone carries the whole project" but the repository-native knowledge; not "every agent knows what a README is" but coding agents understand it; not "every product sold as project memory" but many; not "it was complete for humans" but it holds most of the durable knowledge. Issues and pull-request discussions are named as hosted collaboration memory, outside the clone, with the rule that what matters long-term has to be written back into the repository. Keep the Why is introduced as one convention and implementation for the why layer, never as the project memory itself.
+
+**Reason:** the thesis competes with products that make loud claims; its advantage is that it can be checked. A single sentence that a reader can refute — "GitHub issues are not Git objects" — costs more credibility than a stronger claim would have won. The strongest version of the argument is the precise one: the repository already is the memory, and AI exposed the one layer it was missing.
+
+**Rejected alternative:** keeping the sharper wording for effect and correcting on challenge. Rejected — a thesis page has no second chance with a reader who found the first error.
