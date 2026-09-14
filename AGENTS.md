@@ -1,8 +1,8 @@
 # AGENTS.md
 
-This repository is a thesis page, not a codebase: `README.md` is the content, `docs/` renders it as a site, `context/` keeps the reasoning behind the page itself.
+This repository is a thesis page, not a codebase: `README.md` is the canonical text, `docs/index.html` + `docs/style.css` are the hand-built site (no build step, no dependencies — GitHub Pages serves `docs/` as-is), `context/` keeps the reasoning behind the page itself.
 
-- The content: `README.md` (the site's front page includes it verbatim)
+- The content: `README.md`; the site in `docs/` says the same in its own layout — a change to the thesis is made in both
 - Why things are the way they are: `context/index.md`
 - If `AGENTS.local.md` exists in this checkout, read that too — personal/local notes, not committed.
 
