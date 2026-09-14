@@ -100,6 +100,9 @@ section:first-of-type { border-top: 0; }
 .check li { padding-left: 1.9rem; position: relative; color: var(--ink-2); }
 .check li::before { content: "✓"; position: absolute; left: 0; top: .05rem; width: 1.3rem; height: 1.3rem; border-radius: .35rem; background: var(--green-soft); color: var(--green); font: 700 .85rem/1.3rem var(--sans); text-align: center; }
 
+.limits .prose p { color: var(--ink-2); } .limits .prose strong { color: var(--ink); }
+.limits .verdict { border-top: 1px solid var(--rule); padding-top: 1.2rem; margin-top: 1.6rem; color: var(--ink); }
+
 footer { border-top: 1px solid var(--rule); padding: 2.5rem clamp(1rem, 4vw, 3rem) 4rem; color: var(--ink-2); max-width: 1120px; margin: 0 auto; }
 footer .small { font-size: .85rem; color: var(--ink-3); }
 

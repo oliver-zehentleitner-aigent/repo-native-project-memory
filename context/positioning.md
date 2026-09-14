@@ -73,3 +73,19 @@ The page avoids absolutes where they are technically assailable: not "one clone 
 **Reason:** the thesis competes with products that make loud claims; its advantage is that it can be checked. A single sentence that a reader can refute — "GitHub issues are not Git objects" — costs more credibility than a stronger claim would have won. The strongest version of the argument is the precise one: the repository already is the memory, and AI exposed the one layer it was missing.
 
 **Rejected alternative:** keeping the sharper wording for effect and correcting on challenge. Rejected — a thesis page has no second chance with a reader who found the first error.
+
+## The page names where the thesis is thin
+
+**Type:** decision
+**Status:** active
+**Evidence:** confirmed
+**Source:** outside review forwarded by the maintainer, 2026-09-14
+**Revisit when:** one of the four limits stops being true — activation becomes platform-independent, retrieval at scale is solved repo-natively, or a review practice makes confirmation routine
+
+A section "Where this is thin" states four limits in the page's own voice: a repository is memory only to the degree its layout makes knowledge findable, and at scale that is a retrieval problem; the layer stays empty when no agent fills it, and activation is platform-dependent; structure can be checked, truth cannot, and the confirming, superseding and contradiction-resolving is work the convention names and does not remove; much of the why never reaches the repository at all. It ends by classing the whole thing as a documentation discipline with an agent as the writing hand, not a memory subsystem.
+
+**Reason:** a review found the headline louder than the body and named these four gaps; each was accurate. A thesis that competes on being checkable has to state its own limits before a reader does, and in the same tone as its claims. The alternative — leaving the gaps to be discovered — would hand every critic the same paragraph.
+
+**Rejected alternative:** softening the headline instead. Rejected — "your repository already is your project's memory" is the thesis; qualifying it in the title would blur what the page is for. The qualification belongs where it can be argued: in the body, with its reasons.
+
+**Consequence:** "not a product" now says explicitly that the page argues and Keep the Why is the separate implementation behind the why layer, so the thesis is not read as depending on that tooling.

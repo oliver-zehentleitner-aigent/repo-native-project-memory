@@ -6,7 +6,7 @@
 
 A repository is the one place a software project keeps the durable knowledge about itself: what it is, how to use it, how to build and test it, what changed, who may contribute how, under which terms. That layout has worked for decades, for people, without a platform. It works for AI coding agents too, for the same reason: it is plain files, next to the code, versioned by Git, readable by anything that can read a directory.
 
-This page states a thesis, not a product: the repository is the project memory. It needs no extra service, no account, no subscription. It already holds most of the durable knowledge needed to understand and change a codebase, for people and for agents alike. What it lacked is the layer that holds the reasoning worked out in AI sessions, the why, and that layer can be repo-native too.
+This page states a thesis, not a product: the repository is the project memory. A repository holds that knowledge; it becomes memory to the degree its layout makes it findable — an entry point, a place for each kind of knowledge, an index for the agent to load from. It needs no extra service, no account, no subscription. It already holds most of the durable knowledge needed to understand and change a codebase, for people and for agents alike. What it lacked is the layer that holds the reasoning worked out in AI sessions, the why, and that layer can be repo-native too.
 
 ## Three things that have held for twenty years
 
@@ -79,13 +79,24 @@ That is it. Task fulfilled, no further complexity. Anything beyond it, project m
 
 ## What this is not
 
-- Not a product. There is nothing here to install; the parts that exist are linked above and each stands on its own.
+- Not a product. This page argues; the tooling behind the why layer — [Keep the Why](https://keepthewhy.com) with its skill, linter, dashboard and evals — is a separate project with its own releases, linked above, and each part stands on its own. Keep the distinction: The thesis holds with or without that implementation.
 - Not a replacement for issue trackers, project management or team workflows. Those manage work. This remembers why the code is what it is.
 - Not a claim that agents replace the discipline of thinking, pruning and questioning that keeps any documentation honest. They lower the cost of writing it down; people still decide what is true.
 
 ## The page
 
 This README is the canonical text. The same thesis, laid out, is at https://oliver-zehentleitner.github.io/repo-native-project-memory/ — two plain files in `docs/`, no build, no dependencies, no external requests.
+
+## Where this is thin
+
+The thesis is a diagnosis and a convention. It is not the whole solution, and four things are weaker than the headline sounds:
+
+- **A repository holds knowledge; it is memory only to the degree the layout makes it findable.** For people the layout does that. For agents it does too, at the scale of a lean index and a few dozen topic files. At hundreds of entries, "what do I need to know about this subsystem right now" is a retrieval problem, and search over the files — full-text, an index, embeddings — becomes worth having. Repo-native and good search do not exclude each other; "no database" is a claim about where the knowledge lives, not a search strategy.
+- **The layer stays empty without an agent that fills it, and activation is not guaranteed.** `context/` is not an established convention yet, so an agent has to be told about it; whether it then loads the instruction depends on the platform. Where that fails, the result is the old ADR failure: a good schema and an empty directory. The one implementation linked here measures its activation per release and per agent, and publishes the misses. Anyone adopting the layer with another tool should measure the same thing.
+- **Structure can be checked; truth cannot.** A linter verifies fields, values and the index. It cannot tell a right reason from a confidently wrong one, and a wrong why that the next agent treats as fact is worse than none. That is why an entry carries how well its origin is known (confirmed, inferred, unknown) and why writes can require a person's yes — and that only helps if someone reads. Who confirms, who marks an entry superseded, who resolves a contradiction is work the convention names and does not remove. Extra Markdown in a pull request can be skimmed exactly like an ADR.
+- **Much of the why never reaches the repository.** In real teams it lives in chat, tickets, wikis and heads. "Write it back" is the right rule and a process problem, not a file-format one; the convention makes the destination cheap to reach and gives an agent that is in the conversation a place to put what it heard. It does not reach the conversations the agent was not part of.
+
+This is a documentation discipline with an agent as the writing hand, not a memory subsystem. It wins on ownership, review and longevity. It loses where activation fails, where nobody reads, where the repository is large, and for the knowledge that never gets written down. Read it as a thesis plus a convention, not as "the memory problem is solved."
 
 ## Discussion
 
