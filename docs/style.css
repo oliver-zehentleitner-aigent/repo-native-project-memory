@@ -34,7 +34,15 @@ p { margin: 0 0 1em; }
 main { max-width: 1120px; margin: 0 auto; padding: 0 clamp(1rem, 4vw, 3rem); }
 section { padding: clamp(3rem, 7vw, 5.5rem) 0; border-top: 1px solid var(--rule); }
 section:first-of-type { border-top: 0; }
-.intro, .prose p, .closing { max-width: 68ch; }
+.intro, .prose p, .closing { max-width: 74ch; }
+/* prose-heavy sections read as two columns on wide screens: heading and lead left, the argument right — the line stays a readable length and the width is used */
+@media (min-width: 1000px) {
+  .missing, .limits { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); column-gap: clamp(2rem, 5vw, 5rem); align-items: start; }
+  .missing h2, .limits h2 { grid-column: 1; margin-bottom: .6rem; }
+  .limits .intro { grid-column: 1; }
+  .missing .prose, .limits .prose { grid-column: 2; grid-row: 1 / span 2; }
+  .missing .prose p, .limits .prose p, .missing .note { max-width: none; }
+}
 .kicker { font-family: var(--sans); text-transform: uppercase; letter-spacing: .14em; font-size: .75rem; color: var(--accent-ink); margin-bottom: 1.2rem; }
 
 /* hero */
