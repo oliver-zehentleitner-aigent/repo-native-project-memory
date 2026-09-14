@@ -34,22 +34,13 @@ p { margin: 0 0 1em; }
 main { max-width: 1120px; margin: 0 auto; padding: 0 clamp(1rem, 4vw, 3rem); }
 section { padding: clamp(3rem, 7vw, 5.5rem) 0; border-top: 1px solid var(--rule); }
 section:first-of-type { border-top: 0; }
-.intro, .prose p, .closing { max-width: 74ch; }
-/* prose-heavy sections read as two columns on wide screens: heading and lead left, the argument right — the line stays a readable length and the width is used */
-@media (min-width: 1000px) {
-  .missing, .limits { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); column-gap: clamp(2rem, 5vw, 5rem); align-items: start; }
-  .missing h2, .limits h2 { grid-column: 1; margin-bottom: .6rem; }
-  .limits .intro { grid-column: 1; }
-  .missing .prose, .limits .prose { grid-column: 2; grid-row: 1 / span 2; }
-  .missing .prose p, .limits .prose p, .missing .note { max-width: none; }
-}
 .kicker { font-family: var(--sans); text-transform: uppercase; letter-spacing: .14em; font-size: .75rem; color: var(--accent-ink); margin-bottom: 1.2rem; }
 
 /* hero */
 .hero { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); gap: clamp(2rem, 5vw, 5rem); align-items: center; padding-top: clamp(3rem, 8vw, 6rem); }
 .hero h1 { font-size: clamp(2.1rem, 5vw, 3.6rem); font-weight: 750; }
 .hero h1 em { font-style: normal; color: var(--accent-ink); }
-.lede { font-size: 1.2rem; line-height: 1.55; color: var(--ink-2); max-width: 36em; }
+.lede { font-size: 1.2rem; line-height: 1.55; color: var(--ink-2); }
 .lede strong { color: var(--ink); }
 .hero-links { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 1.6rem; font-family: var(--sans); }
 .btn { display: inline-block; padding: .7rem 1.2rem; border-radius: .5rem; background: var(--ink); color: var(--paper); text-decoration: none; font-weight: 600; font-size: .95rem; }
@@ -87,7 +78,7 @@ section:first-of-type { border-top: 0; }
 .ledger tr.new td strong { color: var(--accent-ink); }
 
 /* missing */
-.note { margin: 1.6rem 0 0; padding: 1.1rem 1.3rem; border-left: 3px solid var(--accent); background: var(--paper-2); border-radius: 0 .6rem .6rem 0; color: var(--ink-2); max-width: 68ch; }
+.note { margin: 1.6rem 0 0; padding: 1.1rem 1.3rem; border-left: 3px solid var(--accent); background: var(--paper-2); border-radius: 0 .6rem .6rem 0; color: var(--ink-2); }
 .note strong { color: var(--ink); }
 
 /* parts */
@@ -104,7 +95,7 @@ section:first-of-type { border-top: 0; }
 .closing { color: var(--ink-2); }
 
 /* checklist */
-.check ul { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .6rem 2rem; max-width: 60rem; }
+.check ul { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .6rem 2rem; }
 .check li { padding-left: 1.9rem; position: relative; color: var(--ink-2); }
 .check li::before { content: "✓"; position: absolute; left: 0; top: .05rem; width: 1.3rem; height: 1.3rem; border-radius: .35rem; background: var(--green-soft); color: var(--green); font: 700 .85rem/1.3rem var(--sans); text-align: center; }
 
