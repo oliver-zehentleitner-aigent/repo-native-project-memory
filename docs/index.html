@@ -110,9 +110,11 @@
 <section id="system">
   <h2>The system, in five parts</h2>
   <p class="intro">Repo-native project memory is not one tool. Read as an architecture: the README, docs, tests, configuration and history hold the <em>what</em> and <em>how</em>; <code>context/</code> holds the <em>why</em>; Git stores, versions, distributes and reviews all of it; the agent is the interface that captures and retrieves; Keep the Why is the convention and the implementation for the why layer.</p>
-  <div class="parts">
+  <div class="parts parts-req">
     <article class="req"><span class="pill">required</span><h3>The repository</h3><p class="role">stores · versions · distributes · reviews</p><p>Git, and the layout above. You already have it.</p></article>
     <article class="req"><span class="pill">required</span><h3>The agent</h3><p class="role">the interface: captures, retrieves, asks</p><p>Whichever coding agent you work with — any that reads a <code>SKILL.md</code> or an <code>AGENTS.md</code>.</p></article>
+  </div>
+  <div class="parts parts-opt">
     <article><span class="pill">writes the why</span><h3><a href="https://keepthewhy.com" rel="noopener">Keep the Why</a>, the skill</h3><p class="role">integrates into the working session</p><p>Synthesizes what is worth keeping into <code>context/</code> under clear rules, and asks before it writes when unsure. Instructions, in the open cross-agent skill format. Without it the layer stays empty.</p></article>
     <article><span class="pill opt">optional</span><h3><a href="https://keepthewhy.com/linting/" rel="noopener">keep-the-why-lint</a></h3><p class="role">checks and verifies the structure</p><p>Fields, values, index, nothing hidden. A small Python package, in CI or run by the agent after it writes. Nice to have the moment more than one person or agent writes.</p></article>
     <article><span class="pill opt">optional</span><h3><a href="https://keepthewhy.com/dashboard/" rel="noopener">keep-the-why-dashboard</a></h3><p class="role">shows it</p><p>The graph, an entry with its Git history, what still needs a person. A read-only page over the files and Git, local or exported. Everything runs through the agent anyway.</p></article>
