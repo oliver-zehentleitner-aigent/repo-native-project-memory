@@ -90,7 +90,7 @@ section:first-of-type { border-top: 0; }
 .parts article.req { border-color: var(--green); background: var(--green-soft); }
 .parts .pill { align-self: flex-start; font-family: var(--sans); font-size: .68rem; text-transform: uppercase; letter-spacing: .1em; padding: .18rem .55rem; border-radius: 999px; background: var(--green); color: #fff; margin-bottom: .8rem; }
 .parts article:not(.req) .pill { background: var(--accent); }
-.parts .pill.opt { background: transparent; color: var(--ink-3); border: 1px solid var(--rule); }
+.parts .pill.opt { background: var(--paper); color: var(--ink-2); border: 1px solid var(--ink-3); }
 .parts .role { font-family: var(--sans); font-size: .8rem; color: var(--ink-3); margin: -.2rem 0 .7rem; }
 .parts article p:last-child { margin: 0; color: var(--ink-2); }
 .closing { color: var(--ink-2); }
