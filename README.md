@@ -79,7 +79,7 @@ That is it. Task fulfilled, no further complexity. Anything beyond it, project m
 
 ## What this is not
 
-- Not a product. This page argues; the tooling behind the why layer — [Keep the Why](https://keepthewhy.com) with its skill, linter, dashboard and evals — is a separate project with its own releases, linked above, and each part stands on its own. Keep the distinction: The thesis holds with or without that implementation.
+- Written by the author of one implementation. This page and [Keep the Why](https://keepthewhy.com) are by the same person, and the tool came first: it started as decision records for agents, and the broader view on this page is what building it taught. Read the thesis as the claim and the tool as one way to act on it — the claim holds with or without that implementation, and it would hold for another one.
 - Not a replacement for issue trackers, project management or team workflows. Those manage work. This remembers why the code is what it is.
 - Not a claim that agents replace the discipline of thinking, pruning and questioning that keeps any documentation honest. They lower the cost of writing it down; people still decide what is true.
 
@@ -104,7 +104,7 @@ Disagree, or see a layer this page misses? The place for that is the repository'
 
 ## Who
 
-Oliver Zehentleitner — [GitHub](https://github.com/oliver-zehentleitner) · [blog](https://blog.technopathy.club). This page is the thesis; [Keep the Why](https://keepthewhy.com) is one practice for its why layer, and this repository keeps its own `context/` in that format, because the argument should hold for the page that makes it.
+Oliver Zehentleitner — [GitHub](https://github.com/oliver-zehentleitner) · [blog](https://blog.technopathy.club) — maintainer of the [UNICORN Binance Suite](https://github.com/oliver-zehentleitner/unicorn-binance-suite) and author of [Keep the Why](https://keepthewhy.com), the implementation this page grew out of. This page is the thesis; Keep the Why is one practice for its why layer, and this repository keeps its own `context/` in that format, because the argument should hold for the page that makes it.
 
 ## License
 
