@@ -108,6 +108,8 @@ None of this is a discovery. That the reasoning behind design decisions gets los
 
 ## Discussion
 
+The same argument as an article, for reading and sharing: [Your repository already is your project's memory. One layer was missing.](https://blog.technopathy.club/your-repository-already-is-your-project-s-memory-one-layer-was-missing)
+
 Disagree, or see a layer this page misses? The place for that is the repository's [Discussions](https://github.com/oliver-zehentleitner/repo-native-project-memory/discussions) — arguments about the thesis, experiences from your own repositories, other conventions for the why layer. Corrections to the text are pull requests.
 
 ## Who
