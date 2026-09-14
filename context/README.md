@@ -2,8 +2,8 @@
 
 # Project context
 
-This directory is this page's memory: the reasoning behind its claims and
-its shape,
+This directory is the why layer of this page's memory: the reasoning behind
+its claims and its shape,
 kept next to them. Decisions, rejected alternatives, workarounds,
 constraints and incident learnings that the code alone cannot explain,
 as plain Markdown, versioned with the code, written for the people and
