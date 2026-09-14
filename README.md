@@ -83,6 +83,10 @@ That is it. Task fulfilled, no further complexity. Anything beyond it, project m
 - Not a replacement for issue trackers, project management or team workflows. Those manage work. This remembers why the code is what it is.
 - Not a claim that agents replace the discipline of thinking, pruning and questioning that keeps any documentation honest. They lower the cost of writing it down; people still decide what is true.
 
+## The page
+
+This README is the canonical text. The same thesis, laid out, is at https://oliver-zehentleitner.github.io/repo-native-project-memory/ — two plain files in `docs/`, no build, no dependencies, no requests to anyone.
+
 ## Who
 
 Oliver Zehentleitner — [GitHub](https://github.com/oliver-zehentleitner) · [blog](https://blog.technopathy.club). This page is the thesis; the practice is [Keep the Why](https://keepthewhy.com), and this repository keeps its own `context/` in the same format, because the argument should hold for the page that makes it.

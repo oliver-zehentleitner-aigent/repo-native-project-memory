@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Repo-native project memory</title>
+<meta name="description" content="Project memory is not another database for your coding agent. Your repository already is the project memory. AI just exposed the one thing it was systematically missing: why.">
+<meta property="og:title" content="Repo-native project memory">
+<meta property="og:description" content="Your repository already is your project's memory. One directory was missing.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://oliver-zehentleitner.github.io/repo-native-project-memory/">
+<link rel="canonical" href="https://oliver-zehentleitner.github.io/repo-native-project-memory/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231a1a1a'/%3E%3Cpath d='M9 10h9M9 16h14M9 22h11' stroke='%23f2e8d8' stroke-width='2.4' stroke-linecap='round'/%3E%3Ccircle cx='24' cy='10' r='2.6' fill='%23e0862e'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#thesis">Skip to content</a>
+
+<header class="top">
+  <a class="mark" href="#top" aria-label="Repo-native project memory">
+    <svg viewBox="0 0 32 32" width="26" height="26" aria-hidden="true"><rect width="32" height="32" rx="6" fill="currentColor" opacity=".9"/><path d="M9 10h9M9 16h14M9 22h11" stroke="var(--paper)" stroke-width="2.4" stroke-linecap="round"/><circle cx="24" cy="10" r="2.6" fill="var(--accent)"/></svg>
+    <span>repo-native<b>project memory</b></span>
+  </a>
+  <nav aria-label="Sections">
+    <a href="#remembers">What a repo remembers</a>
+    <a href="#why-now">Why now</a>
+    <a href="#missing">The missing layer</a>
+    <a href="#system">The system</a>
+    <a href="https://github.com/oliver-zehentleitner/repo-native-project-memory" rel="noopener">GitHub ↗</a>
+  </nav>
+</header>
+
+<main id="top">
+
+<section class="hero" id="thesis">
+  <div class="hero-text">
+    <p class="kicker">A thesis, not a product</p>
+    <h1>Your repository already is your project's&nbsp;memory.<br><em>One directory was missing.</em></h1>
+    <p class="lede">Project memory is not another database for your coding agent. Your repository already is the project memory. AI just exposed the one thing it was systematically missing: <strong>why</strong>.</p>
+    <p class="hero-links"><a class="btn" href="#remembers">Read the argument</a> <a class="btn ghost" href="https://keepthewhy.com" rel="noopener">The practice: Keep the Why ↗</a></p>
+  </div>
+  <figure class="tree" aria-label="A repository tree, annotated with what each part answers">
+    <figcaption>one clone · everything · plain files</figcaption>
+    <ol>
+      <li><span class="f">README.md</span><span class="a">what is this</span></li>
+      <li><span class="f">docs/</span><span class="a">how to use it</span></li>
+      <li><span class="f">CHANGELOG.md</span><span class="a">what changed</span></li>
+      <li><span class="f">CONTRIBUTING.md</span><span class="a">how changes get in</span></li>
+      <li><span class="f">tests/</span><span class="a">what it must do</span></li>
+      <li><span class="f">pyproject.toml</span><span class="a">how it is built</span></li>
+      <li><span class="f">AGENTS.md</span><span class="a">where an agent looks first</span></li>
+      <li><span class="f">.git/</span><span class="a">who changed what, when</span></li>
+      <li class="new"><span class="f">context/</span><span class="a">why it is built this way</span><span class="tag">the missing row</span></li>
+    </ol>
+  </figure>
+</section>
+
+<section class="three" id="held">
+  <h2>Three things that have held for twenty years</h2>
+  <div class="cols">
+    <article><span class="n">1</span><h3>Keep everything in one place.</h3><p>README, docs, tests, build scripts, changelog, license: one clone carries the whole project. Anyone who has it has all of it.</p></article>
+    <article><span class="n">2</span><h3>Stay independent, open and simple.</h3><p>Plain text, an open version control system, no vendor between you and your files. That is why a repository from 2006 still opens today, and why one from today will open in 2046.</p></article>
+    <article><span class="n">3</span><h3>Whoever works on the project needs all of its knowledge.</h3><p>That used to mean people. Now it means the coding agents too, and the classic layout already covers almost everything they need.</p></article>
+  </div>
+</section>
+
+<section id="remembers">
+  <h2>What a repository already remembers</h2>
+  <p class="intro">A repository is the one place a software project keeps everything that describes it. That layout has worked for decades, for people, without a platform. It works for coding agents for the same reason: plain files, next to the code, versioned by Git, readable by anything that can read a directory.</p>
+  <div class="ledger-wrap">
+  <table class="ledger">
+    <thead><tr><th>Element</th><th>The question it answers</th><th>Who reads it</th><th>Who maintains it today</th></tr></thead>
+    <tbody>
+      <tr><td><code>README.md</code></td><td>What is this, should I care, how do I start</td><td>evaluators, new developers, agents on first contact</td><td>humans and agents</td></tr>
+      <tr><td><code>docs/</code></td><td>How do I configure, operate, troubleshoot</td><td>users, agents doing the work</td><td>humans and agents</td></tr>
+      <tr><td><code>CHANGELOG.md</code></td><td>What changed, in which version</td><td>upgraders, reviewers, agents reconstructing the past</td><td>increasingly agents, more detailed than any human kept it</td></tr>
+      <tr><td><code>CONTRIBUTING.md</code></td><td>How does a change get in, which conventions apply</td><td>contributors, agents about to change code</td><td>humans</td></tr>
+      <tr><td><code>LICENSE</code>, <code>SECURITY.md</code>, <code>CODE_OF_CONDUCT.md</code></td><td>Under which terms, how to report, how to behave</td><td>everyone</td><td>humans</td></tr>
+      <tr><td><code>tests/</code></td><td>What the code is supposed to do, executably</td><td>developers, CI, agents checking their own work</td><td>humans and agents</td></tr>
+      <tr><td><code>pyproject.toml</code>, <code>package.json</code>, <code>Cargo.toml</code>, …</td><td>What this depends on, how it is built and published</td><td>build tools, agents setting up</td><td>humans and agents</td></tr>
+      <tr><td><code>AGENTS.md</code>, <code>CLAUDE.md</code></td><td>Where an agent should look first, which conventions to follow</td><td>agents</td><td>humans, since 2025</td></tr>
+      <tr><td>Git history</td><td>Who changed what, when, in which commit</td><td>everyone, if they dig</td><td>everyone, as a byproduct</td></tr>
+      <tr class="new"><td><code>context/</code></td><td><strong>Why is it built this way, what was tried and rejected</strong></td><td>anyone about to change something, human or agent</td><td>agents in the session where the reason surfaces, confirmed by people</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p>That is project memory. It always was. Every row is a plain file or a Git object; every row comes with the clone; every row but the last answers <em>what</em> and <em>how</em>. Issues and pull request discussions sit next to it as hosted collaboration memory — valuable, searchable, and not in the clone; whatever from there should outlive the platform has to be written into one of the rows above.</p>
+</section>
+
+<section id="why-now" class="zones">
+  <h2>Why the question comes up now</h2>
+  <p class="intro">Because coding agents have a memory problem, and it is not the one people usually name. An agent remembers what is in its context window. A new session starts from nothing: the explanation you gave yesterday is gone, the question you settled gets asked again, the turn you ruled out gets proposed again. That is session memory, and many of the products now sold as "project memory" are a response to it. Take the memory an agent needs apart and it falls into three zones:</p>
+  <div class="cols">
+    <article><h3>Personal</h3><p class="where">lives with you</p><p>Who you are, how you like to work, what you never want to see again. A global note, an Obsidian vault, a Markdown file every agent on your machine can read. Not a project's business.</p></article>
+    <article><h3>General</h3><p class="where">lives in the world</p><p>What everyone knows. An agent does not have to hold it; like you, it can look it up.</p></article>
+    <article class="hi"><h3>Project</h3><p class="where">lives in the repository</p><p>What this project is, how it works, what changed — and why it is the way it is. The table above, nearly complete. Agents already maintain the README, the docs and the changelog, and use them without being told to. What they cannot find anywhere is the <strong>why</strong>.</p></article>
+  </div>
+</section>
+
+<section id="missing" class="missing">
+  <h2>The missing layer, and where it goes</h2>
+  <div class="prose">
+    <p>People had a mechanism for the why, for the few large decisions a year: Architecture Decision Records, written by hand, and most projects still have none. What nobody had was an affordable mechanism for the hundred small reasons that actually make a codebase what it is — the retry loop that looks over-engineered, the flag a customer's proxy made necessary, the ordering constraint that looks safe to parallelize. Those lived in one person's head and left with that person, because writing each one down cost more than it seemed worth.</p>
+    <p>Agents change that cost. The reasoning is spoken out loud anyway, and an agent that is in the conversation can write it down as a byproduct: synthesized, short, in a fixed form, committed together with the code it explains. Sometimes there is only a reason and no code — a change started and abandoned once the reason not to became clear. That is the case that matters most, because nothing else, no diff, no commit, no PR, would ever record it.</p>
+    <p>So the missing layer is one more directory. It closes a natural gap instead of opening a new system: it lives where the rest already lives, is versioned by the same Git, travels with every clone and fork, shows up in the pull request beside the code diff where the reviewer needs it, and merges under the same review as the code. No extra layer to buy, no service to keep running, no account whose expiry takes the memory with it.</p>
+    <aside class="note"><strong>One honest difference to the other rows.</strong> <code>README.md</code> needs no instruction — every agent already knows what it is for. <code>context/</code> is not an established structure yet, so for now an agent has to be told what goes there, in which form, and when to ask first. That is what the skill below is: the convention and its implementation, until the convention is as ordinary as a changelog.</aside>
+  </div>
+</section>
+
+<section id="system">
+  <h2>The system, in five parts</h2>
+  <p class="intro">Repo-native project memory is not one tool. Read as an architecture: the README, docs, tests, configuration and history hold the <em>what</em> and <em>how</em>; <code>context/</code> holds the <em>why</em>; Git stores, versions, distributes and reviews all of it; the agent is the interface that captures and retrieves; Keep the Why is the convention and the implementation for the why layer.</p>
+  <div class="parts">
+    <article class="req"><span class="pill">required</span><h3>The repository</h3><p class="role">stores · versions · distributes · reviews</p><p>Git, and the layout above. You already have it.</p></article>
+    <article class="req"><span class="pill">required</span><h3>The agent</h3><p class="role">the interface: captures, retrieves, asks</p><p>Whichever coding agent you work with — any that reads a <code>SKILL.md</code> or an <code>AGENTS.md</code>.</p></article>
+    <article><span class="pill">writes the why</span><h3><a href="https://keepthewhy.com" rel="noopener">Keep the Why</a>, the skill</h3><p class="role">integrates into the working session</p><p>Synthesizes what is worth keeping into <code>context/</code> under clear rules, and asks before it writes when unsure. Instructions, in the open cross-agent skill format. Without it the layer stays empty.</p></article>
+    <article><span class="pill opt">optional</span><h3><a href="https://keepthewhy.com/linting/" rel="noopener">keep-the-why-lint</a></h3><p class="role">checks and verifies the structure</p><p>Fields, values, index, nothing hidden. A small Python package, in CI or run by the agent after it writes. Nice to have the moment more than one person or agent writes.</p></article>
+    <article><span class="pill opt">optional</span><h3><a href="https://keepthewhy.com/dashboard/" rel="noopener">keep-the-why-dashboard</a></h3><p class="role">shows it</p><p>The graph, an entry with its Git history, what still needs a person. A read-only page over the files and Git, local or exported. Everything runs through the agent anyway.</p></article>
+  </div>
+  <p class="closing">That is it. Task fulfilled, no further complexity. Anything beyond it — project management, dashboards for teams, workflows — can be built on top, and for a company that may be the right call. Open source should not have to depend on it. A project that stops using every part except the repository loses nothing: the directory is still Markdown, still in Git, still readable.</p>
+</section>
+
+<section id="checklist" class="check">
+  <h2>What repo-native means</h2>
+  <ul>
+    <li>Plain files in the repository; nothing lives only in a service.</li>
+    <li>Versioned and distributed by Git; no second synchronization problem.</li>
+    <li>Readable by humans and by agents with no tool in between.</li>
+    <li>Reviewed like code: in the pull request, next to the change it explains.</li>
+    <li>No account, no subscription, no telemetry, no daemon, no database.</li>
+    <li>Works without every optional part; degrades to Markdown, never to nothing.</li>
+  </ul>
+</section>
+
+<section id="not" class="not">
+  <h2>What this is not</h2>
+  <div class="cols">
+    <article><h3>Not a product.</h3><p>There is nothing here to install; the parts that exist are linked above and each stands on its own.</p></article>
+    <article><h3>Not a replacement for issue trackers or project management.</h3><p>Those manage work. This remembers why the code is what it is.</p></article>
+    <article><h3>Not a claim that agents replace judgement.</h3><p>They lower the cost of writing things down; people still decide what is true.</p></article>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p>Oliver Zehentleitner — <a href="https://github.com/oliver-zehentleitner" rel="noopener">GitHub</a> · <a href="https://blog.technopathy.club" rel="noopener">blog</a>. This page is the thesis; the practice is <a href="https://keepthewhy.com" rel="noopener">Keep the Why</a>. The repository behind this page keeps its own <a href="https://github.com/oliver-zehentleitner/repo-native-project-memory/tree/main/context" rel="noopener"><code>context/</code></a> in the same format, because the argument should hold for the page that makes it.</p>
+  <p class="small"><a href="https://github.com/oliver-zehentleitner/repo-native-project-memory/blob/main/README.md" rel="noopener">This page as Markdown</a> · <a href="https://github.com/oliver-zehentleitner/repo-native-project-memory/blob/main/LICENSE" rel="noopener">MIT</a> · <a href="https://keepthewhy.com/imprint/" rel="noopener">Imprint</a> · no cookies, no analytics, no external requests — this page is two plain files.</p>
+</footer>
+</body>
+</html>

@@ -43,3 +43,19 @@ The page says the repository is the project memory and that Keep the Why is the 
 **Reason:** the maintainer built Keep the Why first, as a decision-record tool for agents, and arrived at the broader view afterwards: the tool is one facet of something that mostly exists already. Stating the broader view honestly means giving the tool its place and no more. It also keeps the page useful to someone who wants the idea and a different implementation.
 
 **Rejected alternative:** folding this page into keepthewhy.com as a "philosophy" section. Rejected — that site is the practice, with releases and measurements; the thesis should be readable without adopting any of it.
+
+## The site is two hand-written files, not a documentation generator
+
+**Type:** decision
+**Status:** active
+**Evidence:** confirmed
+**Source:** maintainer decision, 2026-09-14, after seeing the first deploy
+**Revisit when:** the page grows beyond one screen of sections, or a second page is needed
+
+`docs/` holds `index.html` and `style.css`, written by hand, served by GitHub Pages without a build step. The first version used the same MkDocs Material setup as keepthewhy.com and looked identical to it.
+
+**Reason:** this is a thesis page, not a documentation site: one argument, one screen of sections, meant to be read once. A docs generator gave it a docs site's furniture — navigation drawer, search, section index — and the same face as the practice it names, which blurred the one distinction the page exists to make. Two plain files also keep the page's own claim: no dependencies, no build, opens unchanged in twenty years. System fonts, no external requests, for the same reason.
+
+**Rejected alternative:** MkDocs Material with a custom theme. Rejected — the theme would have to be maintained against a generator that has announced a breaking rewrite, for a page that needs neither search nor navigation.
+
+**Consequence:** the thesis exists twice, in `README.md` (canonical, what GitHub shows) and in `docs/index.html` (the same sentences, laid out). A change to the argument is made in both; the page is small enough that this costs less than a build pipeline would.
