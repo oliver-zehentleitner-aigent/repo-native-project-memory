@@ -26,6 +26,7 @@
     <a href="#why-now">Why now</a>
     <a href="#missing">The missing layer</a>
     <a href="#system">The system</a>
+    <a href="#limits">Where this is thin</a>
     <a href="#discuss">Discussion</a>
     <a href="https://github.com/oliver-zehentleitner/repo-native-project-memory" rel="noopener">GitHub ↗</a>
   </nav>
@@ -67,7 +68,7 @@
 
 <section id="remembers">
   <h2>What a repository already remembers</h2>
-  <p class="intro">A repository is the one place a software project keeps the durable knowledge about itself. That layout has worked for decades, for people, without a platform. It works for coding agents for the same reason: plain files, next to the code, versioned by Git, readable by anything that can read a directory.</p>
+  <p class="intro">A repository is the one place a software project keeps the durable knowledge about itself, and it becomes memory to the degree its layout makes that knowledge findable — an entry point, a place for each kind, an index to load from. That layout has worked for decades, for people, without a platform. It works for coding agents for the same reason: plain files, next to the code, versioned by Git, readable by anything that can read a directory.</p>
   <div class="ledger-wrap">
   <table class="ledger">
     <thead><tr><th>Element</th><th>The question it answers</th><th>Who reads it</th><th>Who maintains it today</th></tr></thead>
@@ -138,9 +139,21 @@
 <section id="not" class="not">
   <h2>What this is not</h2>
   <div class="cols">
-    <article><h3>Not a product.</h3><p>There is nothing here to install; the parts that exist are linked above and each stands on its own.</p></article>
+    <article><h3>Not a product.</h3><p>This page argues; the tooling behind the why layer — <a href="https://keepthewhy.com" rel="noopener">Keep the Why</a> with its skill, linter, dashboard and evals — is a separate project with its own releases. The thesis holds with or without that implementation.</p></article>
     <article><h3>Not a replacement for issue trackers or project management.</h3><p>Those manage work. This remembers why the code is what it is.</p></article>
     <article><h3>Not a claim that agents replace judgement.</h3><p>They lower the cost of writing things down; people still decide what is true.</p></article>
+  </div>
+</section>
+
+<section id="limits" class="limits">
+  <h2>Where this is thin</h2>
+  <p class="intro">The thesis is a diagnosis and a convention. It is not the whole solution, and four things are weaker than the headline sounds.</p>
+  <div class="prose">
+    <p><strong>A repository holds knowledge; it is memory only to the degree the layout makes it findable.</strong> For people the layout does that. For agents it does too, at the scale of a lean index and a few dozen topic files. At hundreds of entries, "what do I need to know about this subsystem right now" is a retrieval problem, and search over the files — full-text, an index, embeddings — becomes worth having. Repo-native and good search do not exclude each other; "no database" is a claim about where the knowledge lives, not a search strategy.</p>
+    <p><strong>The layer stays empty without an agent that fills it, and activation is not guaranteed.</strong> <code>context/</code> is not an established convention yet, so an agent has to be told about it; whether it then loads the instruction depends on the platform. Where that fails, the result is the old ADR failure: a good schema and an empty directory. That is exactly what the skill is for, and with it the layer does fill: the one implementation linked here <a href="https://keepthewhy.com/evals/" rel="noopener">measures its activation</a> per release and per agent and publishes the misses — in the last measured series every session on a project that had opted in loaded it. Anyone adopting the layer with another tool should measure the same thing.</p>
+    <p><strong>Structure can be checked; truth cannot.</strong> A linter verifies fields, values and the index. It cannot tell a right reason from a confidently wrong one, and a wrong why that the next agent treats as fact is worse than none. That is why an entry carries how well its origin is known (confirmed, inferred, unknown), why writes can require a person's yes, and why "unknown" is a legal answer — the convention takes what can honestly be done with today's means and does not pretend to more. It still only helps if someone reads. Who confirms, who marks an entry superseded, who resolves a contradiction is work the convention names and does not remove. Extra Markdown in a pull request can be skimmed exactly like an ADR.</p>
+    <p><strong>Much of the why never reaches the repository.</strong> In real teams it lives in chat, tickets, wikis and heads. "Write it back" is the right rule and a process problem, not a file-format one; the convention makes the destination cheap to reach and gives an agent that is in the conversation a place to put what it heard. It does not reach the conversations the agent was not part of.</p>
+    <p class="verdict">This is a documentation discipline with an agent as the writing hand, not a memory subsystem. It wins on ownership, review and longevity. It loses where activation fails, where nobody reads, where the repository is large, and for the knowledge that never gets written down. Read it as a thesis plus a convention, not as "the memory problem is solved."</p>
   </div>
 </section>
 
