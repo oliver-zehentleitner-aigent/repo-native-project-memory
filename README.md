@@ -1,6 +1,6 @@
 # Repo-native project memory
 
-**Your repository already is your project's memory. One directory was missing.**
+**Your repository already is your project's memory. One layer was missing.**
 
 > Project memory is not another database for your coding agent. Your repository already is the project memory. AI just exposed the one thing it was systematically missing: why.
 
@@ -41,6 +41,8 @@ Take the memory an agent needs apart and it falls into three zones:
 - **Project knowledge** — what this project is, how it works, what changed, and why it is the way it is. This belongs in the project, and travels with it.
 
 The third zone is the table above, and the table is nearly complete. Agents already maintain the README, the docs and the changelog, and they use them without being told to — the layout is established enough that coding agents understand what a `README.md` or a `CHANGELOG.md` is for. They know *what* the project does and *what* changed. What they cannot find anywhere is *why*: which alternatives were considered, which were rejected and for what reason, which workaround exists because of which incident, which constraint the code does not show. That reasoning is produced in every working session, in the conversation, and a new session throws it away.
+
+> Session memory remembers what happened. Project state remembers where the project is. The why layer preserves why it became what it is.
 
 ## The missing layer, and where it goes
 
