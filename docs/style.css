@@ -34,7 +34,6 @@ p { margin: 0 0 1em; }
 main { max-width: 1120px; margin: 0 auto; padding: 0 clamp(1rem, 4vw, 3rem); }
 section { padding: clamp(3rem, 7vw, 5.5rem) 0; border-top: 1px solid var(--rule); }
 section:first-of-type { border-top: 0; }
-}
 .kicker { font-family: var(--sans); text-transform: uppercase; letter-spacing: .14em; font-size: .75rem; color: var(--accent-ink); margin-bottom: 1.2rem; }
 
 /* hero */
@@ -57,7 +56,9 @@ section:first-of-type { border-top: 0; }
 .tree .a { color: var(--ink-3); font-family: var(--serif); font-style: italic; font-size: .95rem; flex: 1; }
 .tree li.new { margin-top: .5rem; padding: .7rem .8rem; border: 1px solid var(--accent); border-radius: .5rem; background: var(--accent-soft); flex-wrap: wrap; }
 .tree li.new .f, .tree li.new .a { color: var(--accent-ink); font-weight: 600; font-style: normal; }
-.tree .tag { font-family: var(--sans); font-size: .68rem; text-transform: uppercase; letter-spacing: .1em; background: var(--accent); color: #fff; padding: .15rem .5rem; border-radius: 999px; margin-left: auto; /* three columns */
+.tree .tag { font-family: var(--sans); font-size: .68rem; text-transform: uppercase; letter-spacing: .1em; background: var(--accent); color: #fff; padding: .15rem .5rem; border-radius: 999px; margin-left: auto; }
+
+/* three columns */
 .cols { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.4rem; }
 .cols article { background: var(--paper-2); border: 1px solid var(--rule); border-radius: .8rem; padding: 1.3rem 1.4rem; }
 .cols article p:last-child { margin: 0; color: var(--ink-2); }
