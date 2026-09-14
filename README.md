@@ -98,6 +98,10 @@ The thesis is a diagnosis and a convention. It is not the whole solution, and fo
 
 This is a documentation discipline with an agent as the writing hand, not a memory subsystem. It wins on ownership, review and longevity. It loses where activation fails, where nobody reads, where the repository is large, and for the knowledge that never gets written down. Read it as a thesis plus a convention, not as "the memory problem is solved."
 
+## Where the idea comes from
+
+None of this is a discovery. That the reasoning behind design decisions gets lost, and that writing it down costs more at the time than it visibly returns, has been studied in software engineering for decades — the design-rationale literature, and the architecture community's name for the loss, *knowledge vaporization* (Jansen and Bosch, 2005). [Architecture Decision Records](https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions) (Nygard, 2011; [adr.github.io](https://adr.github.io/)) are the practical answer for the few large decisions, and research keeps finding the same gap below them: rationale that is obsolete or missing because of the imbalance between the cost of documenting it and its value to the person writing it ([arXiv:2405.19623](https://arxiv.org/abs/2405.19623)). Recent work on AI-assisted engineering adds the other half of the problem: decisions are now produced faster than teams can validate them, and something has to distinguish conjecture from verified knowledge ([arXiv:2601.21116](https://arxiv.org/abs/2601.21116)). What this page adds is small and specific. AI did not create the need for the why; it changed the economics of capturing it, because the reasoning is now spoken in the working session anyway — and the result has a natural home, a row in the repository next to the others.
+
 ## Discussion
 
 Disagree, or see a layer this page misses? The place for that is the repository's [Discussions](https://github.com/oliver-zehentleitner/repo-native-project-memory/discussions) — arguments about the thesis, experiences from your own repositories, other conventions for the why layer. Corrections to the text are pull requests.

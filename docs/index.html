@@ -27,6 +27,7 @@
     <a href="#missing">The missing layer</a>
     <a href="#system">The system</a>
     <a href="#limits">Where this is thin</a>
+    <a href="#lineage">Origins</a>
     <a href="#discuss">Discussion</a>
     <a href="https://github.com/oliver-zehentleitner/repo-native-project-memory" rel="noopener">GitHub ↗</a>
   </nav>
@@ -154,6 +155,14 @@
     <p><strong>Structure can be checked; truth cannot.</strong> A linter verifies fields, values and the index. It cannot tell a right reason from a confidently wrong one, and a wrong why that the next agent treats as fact is worse than none. That is why an entry carries how well its origin is known (confirmed, inferred, unknown), why writes can require a person's yes, and why "unknown" is a legal answer — the convention takes what can honestly be done with today's means and does not pretend to more. It still only helps if someone reads. Who confirms, who marks an entry superseded, who resolves a contradiction is work the convention names and does not remove. Extra Markdown in a pull request can be skimmed exactly like an ADR.</p>
     <p><strong>Much of the why never reaches the repository.</strong> In real teams it lives in chat, tickets, wikis and heads. "Write it back" is the right rule and a process problem, not a file-format one; the convention makes the destination cheap to reach and gives an agent that is in the conversation a place to put what it heard. It does not reach the conversations the agent was not part of.</p>
     <p class="verdict">This is a documentation discipline with an agent as the writing hand, not a memory subsystem. It wins on ownership, review and longevity. It loses where activation fails, where nobody reads, where the repository is large, and for the knowledge that never gets written down. Read it as a thesis plus a convention, not as "the memory problem is solved."</p>
+  </div>
+</section>
+
+<section id="lineage" class="lineage">
+  <h2>Where the idea comes from</h2>
+  <div class="prose">
+    <p>None of this is a discovery. That the reasoning behind design decisions gets lost, and that writing it down costs more at the time than it visibly returns, has been studied in software engineering for decades — the design-rationale literature, and the architecture community's name for the loss, <em>knowledge vaporization</em> (Jansen and Bosch, 2005). <a href="https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions" rel="noopener">Architecture Decision Records</a> (Nygard, 2011; <a href="https://adr.github.io/" rel="noopener">adr.github.io</a>) are the practical answer for the few large decisions, and research keeps finding the same gap below them: rationale that is obsolete or missing because of the imbalance between the cost of documenting it and its value to the person writing it (<a href="https://arxiv.org/abs/2405.19623" rel="noopener">arXiv:2405.19623</a>). Recent work on AI-assisted engineering adds the other half of the problem: decisions are now produced faster than teams can validate them, and something has to distinguish conjecture from verified knowledge (<a href="https://arxiv.org/abs/2601.21116" rel="noopener">arXiv:2601.21116</a>).</p>
+    <p>What this page adds is small and specific. AI did not create the need for the why; it changed the economics of capturing it, because the reasoning is now spoken in the working session anyway — and the result has a natural home, a row in the repository next to the others.</p>
   </div>
 </section>
 
