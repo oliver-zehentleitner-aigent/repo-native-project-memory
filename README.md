@@ -6,6 +6,8 @@
 
 > Project memory is not another database for your coding agent. Your repository already is the project memory. AI just exposed the one thing it was systematically missing: why.
 
+Repo-native project memory is the durable knowledge about a software project kept as plain files in its repository: README, docs, tests, changelog, history, and the why behind its decisions, versioned and distributed by Git, readable by people and coding agents alike.
+
 A repository is the one place a software project keeps the durable knowledge about itself: what it is, how to use it, how to build and test it, what changed, who may contribute how, under which terms. That layout has worked for decades, for people, without a platform. It works for AI coding agents too, for the same reason: it is plain files, next to the code, versioned by Git, readable by anything that can read a directory.
 
 This page states a thesis, not a product: the repository is the project memory. A repository holds that knowledge; it becomes memory to the degree its layout makes it findable — an entry point, a place for each kind of knowledge, an index for the agent to load from. It needs no extra service, no account, no subscription. It already holds most of the durable knowledge needed to understand and change a codebase, for people and for agents alike. What it lacked is the layer that holds the reasoning worked out in AI sessions, the why, and that layer can be repo-native too.
