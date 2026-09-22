@@ -110,6 +110,8 @@ None of this is a discovery. That the reasoning behind design decisions gets los
 
 The same argument as an article, for reading and sharing: [Your repository already is your project's memory. One layer was missing.](https://blog.technopathy.club/your-repository-already-is-your-project-s-memory-one-layer-was-missing)
 
+Where Keep the Why stands next to other memory tools, sorted by where the memory lives, who reads it and which layer it holds — a dated comparison, September 2026: [Keep the Why vs. Claude Code Auto Memory vs. MemoryCustodian vs. AgentsRoom](https://blog.technopathy.club/keep-the-why-vs-claude-code-auto-memory-vs-memorycustodian-vs-agentsroom)
+
 Disagree, or see a layer this page misses? The place for that is the repository's [Discussions](https://github.com/oliver-zehentleitner/repo-native-project-memory/discussions) — arguments about the thesis, experiences from your own repositories, other conventions for the why layer. Corrections to the text are pull requests.
 
 ## Who
