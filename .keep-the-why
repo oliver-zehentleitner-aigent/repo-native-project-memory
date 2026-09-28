@@ -4,9 +4,11 @@ README, for what Keep the Why actually is.
 
 <!-- keep-the-why:config -->
 - id: oliver-zehentleitner---repo-native-project-memory
+- canonical: https://github.com/oliver-zehentleitner/repo-native-project-memory
+- dashboard-state: https://oliver-zehentleitner.github.io/repo-native-project-memory/dashboard/live/state.json
 - context: `context/`
 - init: complete
-- context-schema: 0.17.1
+- context-schema: 0.18.0
 - capture-confirmation: confirm-when-unsure
 - source-reference: never
 <!-- /keep-the-why:config -->
