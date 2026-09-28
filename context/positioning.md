@@ -67,7 +67,7 @@ The page says the repository is the project memory and that Keep the Why is the 
 
 **Consequence:** the thesis exists twice, in `README.md` (canonical, what GitHub shows) and in `docs/index.html` (the same sentences, laid out). A change to the argument is made in both; the page is small enough that this costs less than a build pipeline would.
 
-**Consequence (2026-09-28):** the deploy workflow adds a generated dashboard of this repository's `context/` under `/dashboard/live/`. It is a view of the reasoning, not a second page of the thesis: `index.html` and `style.css` stay hand-written and build-free, and the footer's "two plain files" still describes the page that makes the argument.
+**Consequence (2026-09-28, confirmed by the maintainer):** the deploy workflow adds a generated dashboard of this repository's `context/` under `/dashboard/live/`. It is a view of the reasoning, not a second page of the thesis: `index.html` and `style.css` stay hand-written and build-free, and the footer's "two plain files" still describes the page that makes the argument.
 
 ## Claims are written to be hard to attack, not to be loud
 
