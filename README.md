@@ -118,7 +118,7 @@ Disagree, or see a layer this page misses? The place for that is the repository'
 
 ## Who
 
-Oliver Zehentleitner — [GitHub](https://github.com/oliver-zehentleitner) · [blog](https://blog.technopathy.club) — maintainer of the [UNICORN Binance Suite](https://github.com/oliver-zehentleitner/unicorn-binance-suite) and author of [Keep the Why](https://keepthewhy.com), the implementation this page grew out of. This page is the thesis; Keep the Why is one practice for its why layer, and this repository keeps its own `context/` in that format, because the argument should hold for the page that makes it.
+Oliver Zehentleitner — [GitHub](https://github.com/oliver-zehentleitner) · [blog](https://blog.technopathy.club) — maintainer of the [UNICORN Binance Suite](https://github.com/oliver-zehentleitner/unicorn-binance-suite) and author of [Keep the Why](https://keepthewhy.com), the implementation this page grew out of. This page is the thesis; Keep the Why is one practice for its why layer, and this repository keeps its own `context/` in that format, because the argument should hold for the page that makes it — [browse it in the dashboard](https://oliver-zehentleitner.github.io/repo-native-project-memory/dashboard/live/).
 
 ## License
 

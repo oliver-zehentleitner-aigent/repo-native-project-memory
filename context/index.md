@@ -54,7 +54,7 @@ Why this page is built the way it is.
 
 ## P
 
-- [positioning.md](positioning.md) — why this is a thesis page and not a tool, why the repository is the unit of the argument, why Keep the Why is named as one part and not the whole
+- [positioning.md](positioning.md) — why this is a thesis page and not a tool, why the repository is the unit of the argument, why Keep the Why is named as one part and not the whole, why the site is hand-written and its `context/` dashboard generated
 
 ## Q
 
