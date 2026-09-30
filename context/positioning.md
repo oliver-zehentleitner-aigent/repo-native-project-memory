@@ -98,7 +98,7 @@ The page avoids absolutes where they are technically assailable: not "one clone 
 **See:** positioning.md#keep-the-why-is-named-as-one-part-not-as-the-whole — 6288e2c2-5d05-405a-8355-3d1c2564adf0 — as of 2026-09-28
 **See:** https://github.com/oliver-zehentleitner/keep-the-why — ffdb33a5-3d9c-43b8-951b-a95a90ac2a74 — as of 2026-09-28
 
-`docs.yml` installs `keep-the-why-dashboard` on the runner and exports this repository's `context/` into the uploaded site at `/dashboard/live/` (`index.html`, `state.json`, `badge.svg`), with the full Git history for the dates and authors, not anonymized. `.keep-the-why` names the published `state.json` as `dashboard-state`. The page links it from the paragraph that says this repository keeps its own `context/`.
+`docs.yml` installs `keep-the-why-dashboard` on the runner and exports this repository's `context/` into the uploaded site at `/dashboard/live/` (`index.html`, `state.json` and the two live badges, `badge-entries.svg` and `badge-entries-flat.svg`), with the full Git history for the dates and authors, not anonymized. `.keep-the-why` names the published `state.json` as `dashboard-state`. The page links it from the paragraph that says this repository keeps its own `context/`.
 
 **Reason:** the entries here and in Keep the Why's `context/` reference each other with `See` lines across the two repositories. A dashboard follows such a reference through the target's published export, found by the `dashboard-state` line; without an export of its own, every reference into this repository would end at the canonical and the Id. The same export lets a reader browse the page's reasoning without cloning it, which the page argues any repository's `context/` should allow.
 
