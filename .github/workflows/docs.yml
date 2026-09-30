@@ -37,7 +37,8 @@ jobs:
         with:
           python-version: "3.12"
       # Keep the Why: this repository's own context/ on /dashboard/live/ —
-      # index.html, state.json and badge.svg, exported from this checkout.
+      # index.html, state.json and the live badges (badge-entries.svg,
+      # badge-entries-flat.svg), exported from this checkout.
       # Generated here, never committed: docs/ stays two hand-written files.
       - run: |
           pip install --quiet keep-the-why-dashboard
